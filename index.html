@@ -6,134 +6,36 @@
 <title>스페인어 30일</title>
 <style>
 :root{--bg:#fff8ed;--card:#fffdf8;--line:#f1dcc0;--red:#c71920;--orange:#ff6a00;--text:#1f2937;--muted:#6b7280}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);font-size:18px;padding-bottom:86px}
-header{position:sticky;top:0;background:#fffaf1;border-bottom:1px solid #ead7be;z-index:5;padding:24px 20px 18px;display:flex;gap:16px;align-items:center}
-.logo{width:66px;height:66px;border-radius:20px;background:linear-gradient(135deg,#d71920,#ff6a00);display:grid;place-items:center;color:white;font-weight:900;font-size:30px}
-h1{font-size:30px;margin:0 0 4px} .sub{color:#69707c;font-weight:700}
-main{padding:18px;max-width:760px;margin:auto} .hero{background:linear-gradient(135deg,#c71920,#ff6a00);color:white;border-radius:28px;padding:28px;margin-bottom:18px;box-shadow:0 14px 34px #f9731666}
-.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:8px 16px;background:#ffffff22;font-weight:800}
-.hero h2{font-size:28px;margin:18px 0 12px} .big{font-size:48px;font-weight:900;margin:20px 0 6px}
-.bar{height:18px;background:#fff4;border-radius:999px;overflow:hidden;border:1px solid #ffffff55} .fill{height:100%;background:white;width:3.3%}
-.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;margin:18px 0;box-shadow:0 10px 24px #8b5e3412}
-h2{font-size:26px;margin:0 0 16px} h3{font-size:22px;margin:18px 0 10px;color:#9b111e}
-.days{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:none}
-.daybtn{min-width:54px;height:48px;border-radius:16px;border:1px solid var(--line);background:#fff;font-weight:900;font-size:17px}
-.daybtn.active{background:var(--red);color:white;border-color:var(--red)}
-.grid{display:grid;grid-template-columns:1fr;gap:10px} .word{border:1px solid var(--line);border-radius:18px;padding:14px;background:white}
-.word b{font-size:22px;color:#b5121b} .ko{font-weight:800} .ex{margin-top:8px;color:#374151} .exko{color:#6b7280;font-size:16px}
-.grammar{line-height:1.7;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
-.table{width:100%;border-collapse:collapse;background:white;border-radius:16px;overflow:hidden;margin:12px 0;font-size:16px}
-.table td,.table th{border:1px solid #f0dfc9;padding:9px;text-align:left;vertical-align:top} .table th{background:#fff3df;color:#8a1018}
-.quizItem{background:white;border:1px solid var(--line);padding:16px;border-radius:18px;margin:12px 0}
-.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border-radius:14px;border:1px solid #ead7be;background:#fffaf1;font-size:17px}
-.opt.ok{background:#dcfce7;border-color:#86efac} .opt.no{background:#fee2e2;border-color:#fecaca}
-.opt.selected{outline:3px solid #f97316;background:#fff3df}
-.quizActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.quizCheck,.completeBtn{border:0;border-radius:16px;padding:14px 16px;font-weight:900;font-size:17px;color:white;background:var(--red)}
-.completeBtn{background:#15803d}
-.completeBtn:disabled{background:#d1d5db;color:#6b7280}
-.quizResult{margin-top:12px;font-weight:900}
-.quizResult.ok{color:#15803d}.quizResult.no{color:#b91c1c}
-nav{position:fixed;left:0;right:0;bottom:0;background:white;border-top:1px solid #ddd;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:10}
-nav button{border:0;background:white;font-size:14px;font-weight:800;color:#555;padding:4px 8px} nav .ico{display:block;font-size:28px} nav button.active{color:var(--red)}
-.small{color:var(--muted);font-size:16px} .hidden{display:none}
-.note{background:#fff7ed;border-left:5px solid #f97316;padding:12px;border-radius:12px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);font-size:18px;padding-bottom:86px}header{position:sticky;top:0;background:#fffaf1;border-bottom:1px solid #ead7be;z-index:5;padding:24px 20px 18px;display:flex;gap:16px;align-items:center}.logo{width:66px;height:66px;border-radius:20px;background:linear-gradient(135deg,#d71920,#ff6a00);display:grid;place-items:center;color:#fff;font-weight:900;font-size:30px}h1{font-size:30px;margin:0 0 4px}.sub{color:#69707c;font-weight:700}main{padding:18px;max-width:760px;margin:auto}.hero{background:linear-gradient(135deg,#c71920,#ff6a00);color:white;border-radius:28px;padding:28px;margin-bottom:18px;box-shadow:0 14px 34px #f9731666}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:8px 16px;background:#ffffff22;font-weight:800}.hero h2{font-size:28px;margin:18px 0 12px}.big{font-size:48px;font-weight:900;margin:20px 0 6px}.bar{height:18px;background:#fff4;border-radius:999px;overflow:hidden;border:1px solid #ffffff55}.fill{height:100%;background:#fff;width:3.3%}.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;margin:18px 0;box-shadow:0 10px 24px #8b5e3412}h2{font-size:26px;margin:0 0 16px}h3{font-size:22px;margin:18px 0 10px;color:#9b111e}.days{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:none}.daybtn{min-width:54px;height:48px;border-radius:16px;border:1px solid var(--line);background:#fff;font-weight:900;font-size:17px}.daybtn.active{background:var(--red);color:#fff;border-color:var(--red)}.grid{display:grid;grid-template-columns:1fr;gap:10px}.word{border:1px solid var(--line);border-radius:18px;padding:14px;background:#fff}.word b{font-size:22px;color:#b5121b}.article{display:inline-block;margin-right:6px;color:#9b111e;font-weight:900}.ko{font-weight:800}.ex{margin-top:8px;color:#374151}.exko{color:#6b7280;font-size:16px}.grammar{line-height:1.7;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;margin:12px 0;font-size:16px}.table td,.table th{border:1px solid #f0dfc9;padding:9px;text-align:left;vertical-align:top}.table th{background:#fff3df;color:#8a1018}.quizItem{background:#fff;border:1px solid var(--line);padding:16px;border-radius:18px;margin:12px 0}.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border-radius:14px;border:1px solid #ead7be;background:#fffaf1;font-size:17px}.opt.selected{outline:3px solid #f97316;background:#fff3df}.opt.ok{background:#dcfce7;border-color:#86efac}.opt.no{background:#fee2e2;border-color:#fecaca}.quizActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.quizCheck,.completeBtn{border:0;border-radius:16px;padding:14px 16px;font-weight:900;font-size:17px;color:#fff;background:var(--red)}.completeBtn{background:#15803d}.completeBtn:disabled{background:#d1d5db;color:#6b7280}.quizResult{margin-top:12px;font-weight:900}.quizResult.ok{color:#15803d}.quizResult.no{color:#b91c1c}nav{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #ddd;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:10}nav button{border:0;background:#fff;font-size:14px;font-weight:800;color:#555;padding:4px 8px}nav .ico{display:block;font-size:28px}nav button.active{color:var(--red)}.small{color:var(--muted);font-size:16px}.hidden{display:none}.note{background:#fff7ed;border-left:5px solid #f97316;padding:12px;border-radius:12px}
 </style>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#c71920">
-<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json?v=3"><meta name="theme-color" content="#c71920"><link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
 <header><div class="logo">ES</div><div><h1>스페인어 30일</h1><div class="sub">중급입문 · 매일 다른 단어 · 문법 · 회화</div></div></header>
 <main>
-<section id="home" class="tab">
- <div class="hero"><span class="pill">20~30분</span><h2>1개월 후 스페인 여행 실전 대비</h2><div class="big" id="dDay">Day 1</div><div class="bar"><div class="fill" id="fill"></div></div><p>단어 24개 · 자세한 문법 · 회화 · 단어퀴즈 20개</p></div>
- <div class="card"><h2>날짜 선택</h2><div class="days" id="dayButtons"></div><p class="small">날짜를 바꾸면 단어·문법·회화·퀴즈가 함께 바뀝니다.</p></div>
- <div class="card"><h2 id="todayTitle"></h2><p id="todayDesc"></p></div>
-</section>
+<section id="home" class="tab"><div class="hero"><span class="pill">20~30분</span><h2>1개월 후 스페인 여행 실전 대비</h2><div class="big" id="dDay">Day 1</div><div class="bar"><div class="fill" id="fill"></div></div><p>단어 24개 · 자세한 문법 · 회화 · 단어퀴즈 20개</p></div><div class="card"><h2>날짜 선택</h2><div class="days" id="dayButtons"></div><p class="small">날짜를 바꾸면 단어·문법·회화·퀴즈가 함께 바뀝니다.</p></div><div class="card"><h2 id="todayTitle"></h2><p id="todayDesc"></p></div></section>
 <section id="words" class="tab hidden"><div class="card"><h2 id="wordsTitle"></h2><div id="wordList" class="grid"></div></div></section>
 <section id="grammar" class="tab hidden"><div class="card"><h2 id="grammarTitle"></h2><div id="grammarBox" class="grammar"></div></div></section>
 <section id="dialogue" class="tab hidden"><div class="card"><h2 id="dialogueTitle"></h2><div id="dialogueBox" class="grammar"></div></div></section>
-<section id="quiz" class="tab hidden"><div class="card"><h2>단어 뜻 퀴즈</h2><p class="small">오늘 단어 중심 20문제입니다.</p><div id="quizBox"></div></div></section>
+<section id="quiz" class="tab hidden"><div class="card"><h2>단어 뜻 퀴즈</h2><p class="small">답을 고른 뒤 정답 확인을 누르세요. 모든 문제를 풀면 학습완료를 누를 수 있습니다.</p><div id="quizBox"></div></div></section>
 </main>
-<nav>
-<button class="nav active" data-tab="home"><span class="ico">🏠</span>홈</button>
-<button class="nav" data-tab="words"><span class="ico">📘</span>단어</button>
-<button class="nav" data-tab="grammar"><span class="ico">🧠</span>문법</button>
-<button class="nav" data-tab="dialogue"><span class="ico">💬</span>회화</button>
-<button class="nav" data-tab="quiz"><span class="ico">✅</span>퀴즈</button>
-</nav>
-<script src="data.js"></script>
+<nav><button class="nav active" data-tab="home"><span class="ico">🏠</span>홈</button><button class="nav" data-tab="words"><span class="ico">📘</span>단어</button><button class="nav" data-tab="grammar"><span class="ico">🧠</span>문법</button><button class="nav" data-tab="dialogue"><span class="ico">💬</span>회화</button><button class="nav" data-tab="quiz"><span class="ico">✅</span>퀴즈</button></nav>
+<script src="data.js?v=3"></script>
 <script>
-let currentDay = Number(localStorage.getItem("spanishDay")||1);
-function $(id){return document.getElementById(id)} function dayData(){return DAYS[currentDay-1]}
-function makeDays(){const wrap=$("dayButtons"); wrap.innerHTML=""; DAYS.forEach(d=>{const b=document.createElement("button"); b.className="daybtn"+(d.day===currentDay?" active":""); b.textContent=d.day; b.onclick=()=>{currentDay=d.day; localStorage.setItem("spanishDay",currentDay); render();}; wrap.appendChild(b);})}
-function table(rows){return "<table class='table'>"+rows.map((r,i)=>"<tr>"+r.map(c=>(i===0?"<th>":"<td>")+c+(i===0?"</th>":"</td>")).join("")+"</tr>").join("")+"</table>"}
-function grammarHTML(d){const g=GRAMMAR[d.day]; return `<h3>${d.grammarTitle}</h3><p>${g.body}</p>${table(g.table)}<div class="note"><b>오늘의 적용</b><br>${d.words[0].example}<br><span class="small">${d.words[0].exampleKo}</span></div>`}
-function render(){const d=dayData(); makeDays(); $("dDay").textContent="Day "+d.day; $("fill").style.width=(d.day/30*100)+"%"; $("todayTitle").textContent=`Day ${d.day} · ${d.theme}`; $("todayDesc").textContent=`오늘은 '${d.theme}' 단어 24개와 '${d.grammarTitle}' 문법을 공부합니다.`; $("wordsTitle").textContent=`Day ${d.day} 단어 24개 · ${d.theme}`; $("wordList").innerHTML=d.words.map(w=>`<div class="word"><b>${w.word}</b> <span class="ko">${w.meaning}</span><div class="ex">${w.example}</div><div class="exko">${w.exampleKo}</div></div>`).join(""); $("grammarTitle").textContent=`Day ${d.day} 문법`; $("grammarBox").innerHTML=grammarHTML(d); $("dialogueTitle").textContent=`Day ${d.day} 실생활 문장 5개 · ${d.dialogueTitle}`; const ps=DIALOGUES[d.day]; $("dialogueBox").innerHTML=`<p class="small">오늘 상황에서 바로 쓸 수 있는 문장만 5개씩 익힙니다.</p>`+ps.map((p,i)=>`<div class="word"><b>${i+1}. ${p[0]}</b><div class="exko">${p[1]}</div></div>`).join(""); makeQuiz(d);}
-function makeQuiz(d){
-  let qs=d.words.slice(0,20);
-  $("quizBox").innerHTML=qs.map((w,i)=>{
-    let opts=[w.meaning];
-    for(let k=1;k<9 && opts.length<4;k++){
-      let m=d.words[(i+k*5)%d.words.length].meaning;
-      if(!opts.includes(m)) opts.push(m);
-    }
-    opts=opts.sort(()=>Math.random()-0.5);
-    return `<div class="quizItem" data-answer="${w.meaning}">
-      <b>${i+1}. ${w.word}</b><p>뜻은?</p>
-      ${opts.map(o=>`<button class="opt" data-value="${o}" onclick="selectAnswer(this)">${o}</button>`).join("")}
-      <div class="quizResult" id="qResult${i}"></div>
-    </div>`;
-  }).join("")+`<div class="quizActions">
-    <button class="quizCheck" onclick="checkQuiz()">정답 확인</button>
-    <button class="completeBtn" id="completeBtn" onclick="completeDay()" disabled>학습완료</button>
-  </div>
-  <p class="small" id="quizSummary">답을 모두 고른 뒤 정답 확인을 눌러주세요.</p>`;
-}
-function selectAnswer(btn){
-  const item=btn.closest(".quizItem");
-  item.querySelectorAll(".opt").forEach(b=>b.classList.remove("selected","ok","no"));
-  btn.classList.add("selected");
-}
-function checkQuiz(){
-  const items=[...document.querySelectorAll(".quizItem")];
-  let correct=0, answered=0;
-  items.forEach((item,i)=>{
-    const selected=item.querySelector(".opt.selected");
-    const result=$("qResult"+i);
-    item.querySelectorAll(".opt").forEach(b=>b.classList.remove("ok","no"));
-    if(!selected){ result.textContent="아직 답을 고르지 않았어요."; result.className="quizResult no"; return; }
-    answered++;
-    const isRight=selected.dataset.value===item.dataset.answer;
-    if(isRight){ correct++; selected.classList.add("ok"); result.textContent="정답입니다!"; result.className="quizResult ok"; }
-    else{
-      selected.classList.add("no");
-      const answerBtn=[...item.querySelectorAll(".opt")].find(b=>b.dataset.value===item.dataset.answer);
-      if(answerBtn) answerBtn.classList.add("ok");
-      result.textContent=`틀렸어요. 정답: ${item.dataset.answer}`;
-      result.className="quizResult no";
-    }
-  });
-  $("quizSummary").textContent=`${answered}/${items.length}문제 선택 · ${correct}/${items.length}문제 정답`;
-  $("completeBtn").disabled=answered<items.length;
-}
-function completeDay(){
-  const done=JSON.parse(localStorage.getItem("spanishDoneDays")||"[]");
-  if(!done.includes(currentDay)) done.push(currentDay);
-  localStorage.setItem("spanishDoneDays", JSON.stringify(done));
-  $("quizSummary").textContent=`Day ${currentDay} 학습완료로 저장했습니다.`;
-  $("completeBtn").textContent="학습완료 저장됨";
-  $("completeBtn").disabled=true;
-}
-document.querySelectorAll(".nav").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(t=>t.classList.add("hidden")); document.querySelectorAll(".nav").forEach(n=>n.classList.remove("active")); $(b.dataset.tab).classList.remove("hidden"); b.classList.add("active");});
-render();
+let currentDay=Number(localStorage.getItem("spanishDay")||1);
+const NO_ARTICLE_WORDS=new Set(["hola","adiós","gracias","perdón","por favor","sí","no","bien","mal","mucho","poco","también","aquí","allí","ahora","luego","hoy","mañana","ayer","siempre","nunca","claro","vale","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve","diez","once","doce","veinte","treinta","cien","caro","barato","gratis","temprano","pronto","antes","después","durante"]);
+const ARTICLE_EXCEPTIONS={agua:"el",día:"el",mapa:"el",problema:"el",idioma:"el",clima:"el",sistema:"el",tema:"el",programa:"el",planeta:"el",mano:"la",foto:"la",moto:"la",radio:"la",noche:"la",tarde:"la",clase:"la",llave:"la",calle:"la",gente:"la",ciudad:"la",habitación:"la",estación:"la",información:"la",dirección:"la",reserva:"la",cuenta:"la",mesa:"la",playa:"la",tienda:"la",familia:"la",persona:"la"};
+function $(id){return document.getElementById(id)}function dayData(){return DAYS[currentDay-1]}function table(rows){return "<table class='table'>"+rows.map((r,i)=>"<tr>"+r.map(c=>(i===0?"<th>":"<td>")+c+(i===0?"</th>":"</td>")).join("")+"</tr>").join("")+"</table>"}
+function articleFor(w){const word=(w.word||"").toLowerCase();if(NO_ARTICLE_WORDS.has(word)||word.includes(" "))return"";const ex=(w.example||"").toLowerCase();const escaped=word.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");const m=ex.match(new RegExp("\\b(el|la|los|las|un|una|unos|unas)\\s+"+escaped+"\\b"));if(m){if(m[1]==="el"||m[1]==="un")return"el";if(m[1]==="la"||m[1]==="una")return"la";if(m[1]==="los"||m[1]==="unos")return"los";if(m[1]==="las"||m[1]==="unas")return"las"}if(ARTICLE_EXCEPTIONS[word])return ARTICLE_EXCEPTIONS[word];if(/(ción|sión|dad|tad|tud|umbre|ie|a)$/.test(word))return"la";if(/(o|or|aje|án|ambre|ete|ín|ma|e)$/.test(word))return"el";return""}
+function displayWord(w){const a=articleFor(w);return `${a?`<span class="article">${a}</span>`:""}${w.word}`}
+function makeDays(){const wrap=$("dayButtons");wrap.innerHTML="";DAYS.forEach(d=>{const b=document.createElement("button");b.className="daybtn"+(d.day===currentDay?" active":"");b.textContent=d.day;b.onclick=()=>{currentDay=d.day;localStorage.setItem("spanishDay",currentDay);render()};wrap.appendChild(b)})}
+function grammarHTML(d){const g=GRAMMAR[d.day];return `<h3>${d.grammarTitle}</h3><p>${g.body}</p>${table(g.table)}<div class="note"><b>오늘의 적용</b><br>${d.words[0].example}<br><span class="small">${d.words[0].exampleKo}</span></div>`}
+function render(){const d=dayData();makeDays();$("dDay").textContent="Day "+d.day;$("fill").style.width=d.day/30*100+"%";$("todayTitle").textContent=`Day ${d.day} · ${d.theme}`;$("todayDesc").textContent=`오늘은 '${d.theme}' 단어 24개와 '${d.grammarTitle}' 문법을 공부합니다.`;$("wordsTitle").textContent=`Day ${d.day} 단어 24개 · ${d.theme}`;$("wordList").innerHTML=d.words.map(w=>`<div class="word"><b>${displayWord(w)}</b> <span class="ko">${w.meaning}</span><div class="ex">${w.example}</div><div class="exko">${w.exampleKo}</div></div>`).join("");$("grammarTitle").textContent=`Day ${d.day} 문법`;$("grammarBox").innerHTML=grammarHTML(d);$("dialogueTitle").textContent=`Day ${d.day} 실생활 문장 5개 · ${d.dialogueTitle}`;const ps=DIALOGUES[d.day];$("dialogueBox").innerHTML=`<p class="small">오늘 상황에서 바로 쓸 수 있는 문장만 5개씩 익힙니다.</p>`+ps.map((p,i)=>`<div class="word"><b>${i+1}. ${p[0]}</b><div class="exko">${p[1]}</div></div>`).join("");makeQuiz(d)}
+function makeQuiz(d){let qs=d.words.slice(0,20);$("quizBox").innerHTML=qs.map((w,i)=>{let opts=[w.meaning];for(let k=1;k<9&&opts.length<4;k++){let m=d.words[(i+k*5)%d.words.length].meaning;if(!opts.includes(m))opts.push(m)}opts=opts.sort(()=>Math.random()-0.5);return `<div class="quizItem" data-answer="${w.meaning}"><b>${i+1}. ${w.word}</b><p>뜻은?</p>${opts.map(o=>`<button class="opt" data-value="${o}" onclick="selectAnswer(this)">${o}</button>`).join("")}<div class="quizResult" id="qResult${i}"></div></div>`}).join("")+`<div class="quizActions"><button class="quizCheck" onclick="checkQuiz()">정답 확인</button><button class="completeBtn" id="completeBtn" onclick="completeDay()" disabled>학습완료</button></div><p class="small" id="quizSummary">답을 모두 고른 뒤 정답 확인을 눌러주세요.</p>`}
+function selectAnswer(btn){const item=btn.closest(".quizItem");item.querySelectorAll(".opt").forEach(b=>b.classList.remove("selected","ok","no"));btn.classList.add("selected")}
+function checkQuiz(){const items=[...document.querySelectorAll(".quizItem")];let correct=0,answered=0;items.forEach((item,i)=>{const selected=item.querySelector(".opt.selected"),result=$("qResult"+i);item.querySelectorAll(".opt").forEach(b=>b.classList.remove("ok","no"));if(!selected){result.textContent="아직 답을 고르지 않았어요.";result.className="quizResult no";return}answered++;const isRight=selected.dataset.value===item.dataset.answer;if(isRight){correct++;selected.classList.add("ok");result.textContent="정답입니다!";result.className="quizResult ok"}else{selected.classList.add("no");const answerBtn=[...item.querySelectorAll(".opt")].find(b=>b.dataset.value===item.dataset.answer);if(answerBtn)answerBtn.classList.add("ok");result.textContent=`틀렸어요. 정답: ${item.dataset.answer}`;result.className="quizResult no"}});$("quizSummary").textContent=`${answered}/${items.length}문제 선택 · ${correct}/${items.length}문제 정답`;$("completeBtn").disabled=answered<items.length}
+function completeDay(){const done=JSON.parse(localStorage.getItem("spanishDoneDays")||"[]");if(!done.includes(currentDay))done.push(currentDay);localStorage.setItem("spanishDoneDays",JSON.stringify(done));$("quizSummary").textContent=`Day ${currentDay} 학습완료로 저장했습니다.`;$("completeBtn").textContent="학습완료 저장됨";$("completeBtn").disabled=true}
+document.querySelectorAll(".nav").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(t=>t.classList.add("hidden"));document.querySelectorAll(".nav").forEach(n=>n.classList.remove("active"));$(b.dataset.tab).classList.remove("hidden");b.classList.add("active")});render();
 </script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
-  });
-}
-</script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",()=>{navigator.serviceWorker.register("./sw.js?v=3").catch(()=>{})})}</script>
 </body></html>
