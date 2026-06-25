@@ -1,4 +1,4 @@
-const CACHE_NAME = "spanish-30-pwa-v1";
+const CACHE_NAME = "spanish-30-pwa-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -26,9 +26,27 @@ self.addEventListener("activate", event => {
 });
 
 self.addEventListener("fetch", event => {
+  const req = event.request;
+  const url = new URL(req.url);
+  const isHtml = req.mode === "navigate" || url.pathname.endsWith("/") || url.pathname.endsWith("index.html");
+  const isData = url.pathname.endsWith("data.js") || url.pathname.endsWith("manifest.json");
+
+  if (isHtml || isData) {
+    event.respondWith(
+      fetch(req).then(res => {
+        const copy = res.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(req, copy));
+        return res;
+      }).catch(() => caches.match(req).then(cached => cached || caches.match("./index.html")))
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then(cached => {
-      return cached || fetch(event.request).catch(() => caches.match("./index.html"));
-    })
+    caches.match(req).then(cached => cached || fetch(req).then(res => {
+      const copy = res.clone();
+      caches.open(CACHE_NAME).then(cache => cache.put(req, copy));
+      return res;
+    }).catch(() => caches.match("./index.html")))
   );
 });
